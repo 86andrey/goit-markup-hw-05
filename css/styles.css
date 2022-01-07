@@ -92,9 +92,20 @@ img {
 .header-item a,
 .auth-mail a,
 .auth-tel a {
+    
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+}
+
+.header-item .current::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 4px;
+    top: 76px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .header-item:not(:last-child) {
@@ -104,6 +115,7 @@ img {
 /* ---------site nav--------------- */
 
 .site-nav, .auth-nav {
+    position: relative;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.14;
@@ -131,8 +143,8 @@ img {
     color: var(--primary-text-color);
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus,
+.site-nav .studia:hover, 
+.site-nav .studia:focus,
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .item-linki:hover,

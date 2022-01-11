@@ -666,7 +666,6 @@ a.studia.current::after {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-    
 }
 
 .portfolio-list-heading {
@@ -730,7 +729,7 @@ a.studia.current::after {
     left: 0;
     padding: 63px 24px;
     margin: 0;
-    background-color: #fff;
+    background-color: var(--primary-white-color);
     height: 294px;
     width: 100%;
     transform: translateY(100%);
